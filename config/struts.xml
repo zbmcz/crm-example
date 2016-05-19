@@ -10,7 +10,7 @@
 
 	<!-- Extends the 'common' package in your module development -->
 	<package name="common" namespace="/" extends="struts-default">
-
+		<!-- 
 		<interceptors>
 			<interceptor name="loginInterceptor"
 				class="edu.hebut.crm.core.web.action.LoginInterceptor"></interceptor>
@@ -20,7 +20,7 @@
 			</interceptor-stack>
 		</interceptors>
 		<default-interceptor-ref name="loginDefaultStack"></default-interceptor-ref>
-
+		 -->
 		<global-results>
 			<result name="input" type="dispatcher">/WEB-INF/pages/login.jsp</result>
 		</global-results>
