@@ -14,12 +14,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<frame src="<%=basePath %>/ui_frame_top.do" scrolling="no"/>
 		<frameset id="main" cols="170,9,*" framespacing="0px" frameborder="no" >
 			<frameset rows="30,*,40" framespacing="0px" frameborder="no" >
-				<frame src="<%=basePath %>/ui_frame_left1.do" scrolling="no"/>
-				<frame src="../html/frame/left.html" scrolling="yes"/>
-				<frame src="../html/frame/left2.html" scrolling="no"/>
+				<frame src="<%=basePath %>/ui_frame_left_top.do" scrolling="no"/>
+				<frame src="<%=basePath %>/ui_frame_left_centre.do" scrolling="yes"/>
+				<frame src="<%=basePath %>/ui_frame_left_bottom.do" scrolling="no"/>
 			</frameset>
-			<frame src="../html/frame/control.html" scrolling="no"/>
-			<frame src="../html/frame/right.html" name="right" scrolling="no"/>
+			<frame src="<%=basePath %>/ui_frame_control.do" scrolling="no"/>
+			<frame src="<%=basePath %>/ui_frame_centre.do" name="right" scrolling="no"/>
 		</frameset>
 	</frameset>
 
