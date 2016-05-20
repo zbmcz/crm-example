@@ -29,6 +29,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			msg += myArray[weekday];
 			return msg;
 		})();
+		// 
+		function changePsw(){
+			self.window.open();
+		}
 	</script>
   </head>
   
@@ -79,7 +83,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										<tr>
 											<td width="26"><img border="0" src="<%=basePath %>images/frame/top/pwd.gif"></td>
 											<td width="51" valign="middle">
-												<a href="../staff/updPwd.html" target="right"><font color="ffffff">更改口令</font></a>
+												<a href="javascript:void(0)" onclick="changePsw();" target="right"><font color="ffffff">更改口令</font></a>
 											</td>
 											<td width="31"><p align="center"><img border="0" src="<%=basePath %>images/frame/top/login.gif"></td>
 											<td width="55" valign="middle"><a href="../login.html" target="_top"><font color="ffffff">重新登陆</font></a></td>

@@ -14,10 +14,10 @@
 	function shift_status() {
 		if (flag) {
 			parent.main.cols="170,9,*";
-			document.all.menuSwitch1.src = '${pageContext.request.contextPath}/images/ej1_30.gif';
+			document.all.menuSwitch1.src = '${pageContext.request.contextPath}/images/frame/control/ej1_30.gif';
 		} else {
 			parent.main.cols = "0,9,*";
-			document.all.menuSwitch1.src = '${pageContext.request.contextPath}/images/ej1_32.gif';
+			document.all.menuSwitch1.src = '${pageContext.request.contextPath}/images/frame/control/ej1_32.gif';
 		}
 		flag = !flag;
 	}
@@ -30,7 +30,7 @@
 		<TBODY>
 			<TR>
 				<TD id=menuSwitch style="CURSOR: hand" vAlign=center bgColor=#3391CF>
-					<IMG id=menuSwitch1 src="${pageContext.request.contextPath}/images/ej1_30.gif" width=9>
+					<IMG id=menuSwitch1 src="${pageContext.request.contextPath}/images/frame/control/ej1_30.gif" width=9>
 				</TD>
 			</TR>
 		</TBODY>

@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<td height="93"></td>
 			</tr>
 			<tr>
-				<td><img border="0" src="${pageContext.request.contextPath}/images/right.jpg" width="740" height="412"></td>
+				<td><img border="0" src="${pageContext.request.contextPath}/images/frame/centre/right.jpg" width="740" height="412"></td>
 			</tr>
 		</table>
 	</div>
