@@ -33,6 +33,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		function changePsw(){
 			self.window.open();
 		}
+		// logout
+		function logout(){
+			var confirm = window.confirm("确定要退出吗?");
+			if(confirm){
+				window.parent.location.href = "${pageContext.request.contextPath}/index.jsp";
+			}
+		}
 	</script>
   </head>
   
@@ -86,7 +93,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 												<a href="javascript:void(0)" onclick="changePsw();" target="right"><font color="ffffff">更改口令</font></a>
 											</td>
 											<td width="31"><p align="center"><img border="0" src="<%=basePath %>images/frame/top/login.gif"></td>
-											<td width="55" valign="middle"><a href="../login.html" target="_top"><font color="ffffff">重新登陆</font></a></td>
+											<td width="55" valign="middle"><a href="logout();" target="_top"><font color="ffffff">退出登陆</font></a></td>
 										</tr>
 									</table>
 								</div>
