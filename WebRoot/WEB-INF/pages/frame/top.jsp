@@ -37,7 +37,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		function logout(){
 			var confirm = window.confirm("确定要退出吗?");
 			if(confirm){
-				window.parent.location.href = "${pageContext.request.contextPath}/index.jsp";
+				window.parent.location.href = "${pageContext.request.contextPath}/logout.do";
 			}
 		}
 	</script>
