@@ -56,5 +56,14 @@ public class LoginAction extends ActionSupport implements ModelDriven<User> {
 		ActionContext.getContext().getSession().put("user", queryUser);
 		return SUCCESS;
 	}
-
+	
+	
+	/**
+	 * logout
+	 * @return
+	 */
+	public String logout(){
+		ActionContext.getContext().getSession().remove("user");
+		return SUCCESS;
+	}
 }
