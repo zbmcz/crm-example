@@ -59,7 +59,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									<td width="150" height="24"></td>
 								</tr>
 								<tr>
-									<td width="150" height="35"><p align="right"><font color="#FFFFFF">欢迎您<b></b></font></td>
+									<td width="150" height="35"><p align="right"><font color="#FFFFFF">欢迎您 ${user.username }<b></b></font></td>
 								</tr>
 							</table>
 						</div>
